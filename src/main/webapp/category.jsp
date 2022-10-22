@@ -1,14 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<!-- If something breaks uncomment the below line -->
+<!-- <body id="category"> -->
 
-<!DOCTYPE html>
-<html lang="zxx" class="no-js">
 
-<head>
-	<%@ include file="../includefiles/headandtitle.jspf" %>
-</head>
-
-<body id="category">
+<%@ include file="../includefiles/headerMAIN.jspf" %>
 
 	<%@ include file="../includefiles/header.jspf" %>
 

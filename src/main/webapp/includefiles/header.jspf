@@ -20,8 +20,8 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item active"><a class="nav-link" href="Category?ctype=men">Men</a></li>
-							<li class="nav-item active"><a class="nav-link" href="Category?ctype=women">Women</a></li>
+							<li class="nav-item" id="men"><a class="nav-link" href="Category?ctype=men">Men</a></li>
+							<li class="nav-item" id="women"><a class="nav-link" href="Category?ctype=women">Women</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="Category?ctype=women" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Women.old</a>
@@ -33,7 +33,7 @@
 									<li class="nav-item"><a class="nav-link" href="Confirmation">Confirmation</a></li>
 								</ul>
 							</li>
-							<li class="nav-item active"><a class="nav-link" href="Category?ctype=kids">Kids</a></li>
+							<li class="nav-item" id="kids"><a class="nav-link" href="Category?ctype=kids">Kids</a></li>
 							<li class="nav-item"><a class="nav-link" href="Contact">Contact</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
@@ -64,5 +64,8 @@
 			</div>
 		</div>
 	</header>
+
+<script>
+</script>
 <!-- End Header Area -->
 

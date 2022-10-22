@@ -59,20 +59,10 @@
 								</div>
 							</div>
 				<!-- ************************************************* -->
+					<!-- Check myJs.js	-->
 							<div class="col-md-12 form-group">
 								<button type="submit" value="submit" class="primary-btn">Log In <br><small id="loginButton">customer</small> </button>
 							</div>
-							<script>
-							function loginAs(){
-								var selectorRadios = document.getElementsByName("selector");
-								for(i = 0; i < selectorRadios.length; i++){
-									if(selectorRadios[i].checked){
-										var valueOfRadioSelected = selectorRadios[i].value;
-										document.getElementById("loginButton").innerHTML = valueOfRadioSelected;							
-									}
-								}
-							}
-							</script>
 				<!-- ************************************************* -->
 						</form>
 					</div>
