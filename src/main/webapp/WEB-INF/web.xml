@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>sportyshoes</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+	</welcome-file-list>
+
+	<!-- CLEANING URLS -->
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<jsp-file>/login.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Cart</servlet-name>
+		<jsp-file>/cart.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Cart</servlet-name>
+		<url-pattern>/Cart</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Category</servlet-name>
+		<jsp-file>/category.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Category</servlet-name>
+		<url-pattern>/Category</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Checkout</servlet-name>
+		<jsp-file>/checkout.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Checkout</servlet-name>
+		<url-pattern>/Checkout</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Confirmation</servlet-name>
+		<jsp-file>/confirmation.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Confirmation</servlet-name>
+		<url-pattern>/Confirmation</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Contact</servlet-name>
+		<jsp-file>/contact.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Contact</servlet-name>
+		<url-pattern>/Contact</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Home</servlet-name>
+		<jsp-file>/index.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Home</servlet-name>
+		<url-pattern>/HOME</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Registration</servlet-name>
+		<jsp-file>/registration.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Registration</servlet-name>
+		<url-pattern>/Registration</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ProductInfo</servlet-name>
+		<jsp-file>/singleproduct.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProductInfo</servlet-name>
+		<url-pattern>/ProductInfo</url-pattern>
+	</servlet-mapping>
+
+	<!-- ************* -->
+</web-app>
