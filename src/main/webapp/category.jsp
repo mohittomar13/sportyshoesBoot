@@ -12,25 +12,26 @@
 			<div class="container">
 			<% 
 				/*
-					ctype comming from = header.jspf
+					pageType comming from = NavigationalRedirects.java
 				*/
-				String ctype = request.getParameter("ctype"); 
-				if(ctype.equals("men")){
+				String pageType = request.getAttribute("pageType").toString(); 
+				if(pageType.equals("men")){
 			%>
-				<h1> Shop for <%= ctype %> <i class="fa-solid fa-mars"></i> shoes</h1>
-				<%} else if (ctype.equals("women")){%>
-				<h1> Shop for <%= ctype %> <i class="fa-solid fa-venus"></i> shoes</h1>
-			<% } else if (ctype.equals("kids")){ %>
-				<h1> Shop for <%= ctype %> <i class="fa-solid fa-child-reaching"></i> shoes</h1>
+				<h1> Shop for <%= pageType %> <i class="fa-solid fa-mars"></i> shoes</h1>
+				<%} else if (pageType.equals("women")){%>
+				<h1> Shop for <%= pageType %> <i class="fa-solid fa-venus"></i> shoes</h1>
+			<% } else if (pageType.equals("kids")){ %>
+				<h1> Shop for <%= pageType %> <i class="fa-solid fa-child-reaching"></i> shoes</h1>
 			<% } else { %>
-				<h1> Shop for <%= ctype %> shoes</h1>
+				<h1> Shop for <%= pageType %> shoes</h1>
 			<% } %>
 			</div>
 	</section>
 	<!-- End Banner Area -->
 	
 	
-
+<br>
+<br>
 <!-- Main Body Start -->
 
 	<div class="container">
