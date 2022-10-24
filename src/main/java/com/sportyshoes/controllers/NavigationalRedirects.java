@@ -1,4 +1,4 @@
-package com.sportyshoes.redirects;
+package com.sportyshoes.controllers;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
