@@ -1,3 +1,4 @@
+<%@page import="com.sportyshoes.entities.Customer"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 
@@ -35,14 +36,41 @@
 							</li>
 							<li class="nav-item" id="kids"><a class="nav-link" href="kids">Kids</a></li>
 							<li class="nav-item" id="contact"><a class="nav-link" href="contact">Contact</a></li>
+							
+							
+							
+			<!-- These values are set by CommonController.java/loginCustomer() -->
+							<%
+								Customer customer = (Customer) session.getAttribute("currentCustomer");
+								if(customer != null){
+							%>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								 aria-expanded="false"><i class="fa-regular fa-user"></i>&nbsp; <%= customer.getName() %></a>
+								<ul class="dropdown-menu" style="border:2px solid white;">
+									<li class="nav-item"><a class="nav-link" href="logout">Logout</a></li>
+								</ul>
+							</li>
+							<%
+								} else {
+							%>
+							
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Login / Register</a>
-								<ul class="dropdown-menu">
+								<ul class="dropdown-menu" style="border:2px solid white;">
 									<li class="nav-item"><a class="nav-link" href="login">Login</a></li>
 									<li class="nav-item"><a class="nav-link" href="registration">Register</a></li>
 								</ul>
 							</li>
+							
+							<%
+								}
+							%>
+							
+							
+							
+							
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li class="nav-item"><a href="#" class="cart"><span class="ti-bag"></span></a></li>

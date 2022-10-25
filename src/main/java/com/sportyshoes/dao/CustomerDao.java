@@ -19,4 +19,9 @@ public class CustomerDao {
 	public Customer saveCustomer(Customer customer) {
 		return custRepo.save(customer);
 	}
+	
+	public Customer findByEmailAndPassword(Customer customer) {
+		return custRepo.findByEmailAndPassword(customer.getEmail(), customer.getPassword());
+	}
+	
 }

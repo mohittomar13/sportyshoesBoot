@@ -5799,3 +5799,24 @@ label {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+
+/* MY CUSTOM MODIFICATIONS */
+
+.alert-success {
+    color: #155724;
+    background-color: #80e380;
+    border-color: #c3e6cb;
+    font-size: medium;
+    border-radius: 0px 25px;
+    margin: 50px;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #fda4a6;
+    border-color: #f5c6cb;
+    font-size: medium;
+    border-radius: 0px 25px;
+    margin: 50px;
+}
