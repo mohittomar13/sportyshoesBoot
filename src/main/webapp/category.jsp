@@ -14,6 +14,7 @@
 				/*
 					pageType comming from = NavigationalRedirects.java
 				*/
+				// String pageType = (String)request.getAttribute("pageType"); 
 				String pageType = request.getAttribute("pageType").toString(); 
 				if(pageType.equals("men")){
 			%>

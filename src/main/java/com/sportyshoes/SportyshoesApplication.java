@@ -4,8 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
-import com.sportyshoes.entities.Customer;
-import com.sportyshoes.repos.CustomerRepository;
+import com.sportyshoes.entities.Product;
+import com.sportyshoes.pojos.ProductType;
 
 @SpringBootApplication
 public class SportyshoesApplication {
@@ -20,21 +20,24 @@ public class SportyshoesApplication {
 		 */
 
 		appContext = SpringApplication.run(SportyshoesApplication.class, args);
+		Product product = new Product();
+		product.setProductType(ProductType.MEN);
 
-		CustomerRepository customerRepo = appContext.getBean(CustomerRepository.class);
-
-		Customer customer = new Customer();
-		customer.setName("rohit");
-		customer.setEmail("rohit@gmail.com");
-		customer.setPassword("abc123");
-
-		customerRepo.save(customer);
+//		CustomerRepository customerRepo = appContext.getBean(CustomerRepository.class);
+//
+//		Customer customer = new Customer();
+//		customer.setName("rohit");
+//		customer.setEmail("rohit@gmail.com");
+//		customer.setPassword("abc123");
+//
+//		customerRepo.save(customer);
 
 		/*
 		 * For debugging and testing
 		 */
 //		List<Customer> allCustomer = customerRepo.getAllCustomer();
 //		allCustomer.forEach(customer2 -> System.out.println(customer2));
+		System.out.println("**DONE**");
 	}
 	
 	public static ConfigurableApplicationContext getAppContext() {
