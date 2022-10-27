@@ -9,8 +9,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 
-import com.sportyshoes.pojos.ProductType;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -25,12 +23,11 @@ public class Product {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
-	
 	private String name;
-//	private String type; //Male Female Kid
-	private ProductType productType;
 	private int quantity;
 	private double cost;
+	private String image;
+	private String type; //Male Female Kid
 	
 	@ManyToMany(cascade = CascadeType.ALL)
 	private List<Saleorder> saleorders;

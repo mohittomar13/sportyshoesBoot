@@ -3,14 +3,14 @@ package com.sportyshoes.controllers;
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.sportyshoes.dao.AdminDao;
 import com.sportyshoes.entities.Admin;
 import com.sportyshoes.pojos.Message;
 
-@RestController
+@Controller
 public class AdminController {
 	@Autowired
 	AdminDao adminDao;
@@ -27,4 +27,6 @@ public class AdminController {
 		}
 		return mv;
 	}
+	
+	
 }

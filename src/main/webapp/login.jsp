@@ -46,13 +46,13 @@
 						//Message msg = new Message("Logout Success..!! :-)", "alert-danger", "alert");
 						//Message msg = null;
 
-							Message msg = (Message) request.getAttribute("msg");
-							if (msg != null) {
+						Message msg = (Message) request.getAttribute("msg");
+						if (msg != null) {
 						%>
 						<div class="alert <%=msg.getCssClass()%>" role="alert"><%=msg.getText()%></div>
 						<%
-								request.removeAttribute("msg");
-							}
+						request.removeAttribute("msg");
+						}
 						%>
 
 						<h3>Log in to enter</h3>
@@ -63,6 +63,8 @@
 
 						<form class="row login_form" action="login" method="post"
 							id="contactForm" novalidate="novalidate">
+							<!-- 	image: <input type="file"><br> -->
+							<!-- 	image: <input type="image"><br> -->
 							<div class="col-md-12 form-group">
 								<input type="text" class="form-control" id="email" name="email"
 									placeholder="Email" onfocus="this.placeholder = ''"

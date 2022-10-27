@@ -5791,16 +5791,21 @@ label {
     color: #ffba00; }
 
 .sticky-header::before{
-	font-size: 1.5em;
-	font-weight: bold;
-	color: red;
-	background-color: yellow;
-	content: "Work in progress (Project by Mohit Tomar)";
+	font-size: 1em;
+	background-color: #eeeeee;
+	content: "Project by Mohit Tomar";
+	margin-left: 140px;
 }
 
 /*# sourceMappingURL=main.css.map */
 
-
+/*
+	*************************************************************************
+	*************************************************************************
+	*************************************************************************
+	*************************************************************************
+	*************************************************************************
+*/
 /* MY CUSTOM MODIFICATIONS */
 
 .alert-success {
@@ -5820,3 +5825,30 @@ label {
     border-radius: 0px 25px;
     margin: 50px;
 }
+
+.editdelete {
+	visibility: hidden;
+}
+
+.cust:hover>.editdelete {
+	visibility: visible;
+}
+
+
+.mainContainer{
+	position: relative;
+}
+
+/* These are not working. But for now I kept these */
+
+.stickyInput{
+	position: sticky;
+	top: 10;
+}
+
+.stickyTableHead{
+	position: sticky;
+	top:20;
+}
+
+/* ************************************************ */

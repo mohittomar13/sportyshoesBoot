@@ -4,9 +4,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
-import com.sportyshoes.entities.Product;
-import com.sportyshoes.pojos.ProductType;
-
 @SpringBootApplication
 public class SportyshoesApplication {
 	private static ConfigurableApplicationContext appContext;
@@ -20,8 +17,7 @@ public class SportyshoesApplication {
 		 */
 
 		appContext = SpringApplication.run(SportyshoesApplication.class, args);
-		Product product = new Product();
-		product.setProductType(ProductType.MEN);
+		
 
 //		CustomerRepository customerRepo = appContext.getBean(CustomerRepository.class);
 //

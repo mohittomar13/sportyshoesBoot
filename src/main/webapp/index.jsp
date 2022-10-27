@@ -11,18 +11,6 @@
 <body>
 	<%@ include file="../includefiles/header.jspf"%>
 
-	<!-- ********************************************* -->
-	<!-- ****    TESTING AND DEBUGGING   ************* -->
-	<!-- ********************************************* -->
-	<form action="test">
-		<input type="text" name="test"> <input type="submit"
-			value="test">
-	</form>
-	<!-- ********************************************* -->
-	<!-- ********************************************* -->
-	<!-- ********************************************* -->
-
-
 	<!-- start banner Area -->
 	<section class="banner-area">
 		<div class="container">
@@ -131,7 +119,7 @@
 		<div class="row justify-content-center">
 			<div class="col-lg-6 text-center">
 				<div class="section-title">
-					<h1>Latest Products</h1>
+					<h1>Latest Products <br><small style="background: yellow;">(Work in progress)</small></h1>
 					<p>Following are the products that are recently added to our
 						store</p>
 				</div>
@@ -241,15 +229,6 @@
 		</div>
 	</div>
 
-	<!-- ********************************************* -->
-	<!-- ********************************************* -->
-	<!-- ********************************************* -->
-	<h1 onclick="selectActivePage()"
-		style="background-color: yellow; color: red;">TESTING AND
-		DEBUGING</h1>
-	<!-- ********************************************* -->
-	<!-- ********************************************* -->
-	<!-- ********************************************* -->
 	<%@ include file="../includefiles/footer.jspf"%>
 	<%@ include file="../includefiles/scripttags.jspf"%>
 </body>

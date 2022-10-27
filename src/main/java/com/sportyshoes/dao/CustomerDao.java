@@ -1,5 +1,7 @@
 package com.sportyshoes.dao;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,4 +26,15 @@ public class CustomerDao {
 		return custRepo.findByEmailAndPassword(customer.getEmail(), customer.getPassword());
 	}
 	
+	public List<Customer> getAllCustomers(){
+		return custRepo.findAll();
+	}
+	
+	public Customer getCustomerById(int id) {
+		return custRepo.getReferenceById(id);
+	}
+	
+	public void deleteCustomer(Customer customer) {
+		custRepo.delete(customer);
+	}
 }

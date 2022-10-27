@@ -1,0 +1,72 @@
+<%@page import="com.sportyshoes.entities.Admin"%>
+<%@page import="com.sportyshoes.entities.Customer"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+
+<!-- Start Header Area -->
+	<header class="header_area sticky-header" style="background-image: url('https://aux.iconspalace.com/uploads/1136517612333987818.png');">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light main_box" style="background-color: rgba(255,255,255,0.8);">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="adminConsole.jsp">
+						<img src="img/logo.png" width="225" height="70">
+						<h2>AdminConsole</h2>
+					</a>
+						
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav ml-auto">
+							<li class="nav-item" id="men"><a class="nav-link" href="allCustomers">View-Customers</a></li>
+							<li class="nav-item" id="women"><a class="nav-link" href="viewSales">View-Sales</a></li>
+							<li class="nav-item" id="kids"><a class="nav-link" href="manageProducts">Manage-Products</a></li>
+							
+			<!-- These values are set by CommonController.java/loginCustomer() -->
+							<%
+								Admin admin= (Admin) session.getAttribute("currentAdmin");
+								if(admin != null){
+							%>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								 aria-expanded="false"><i class="fa-solid fa-user-shield"></i>&nbsp; <%= admin.getName() %></a>
+								<ul class="dropdown-menu" style="border:2px solid white;">
+									<li class="nav-item"><a class="nav-link" href="logout">Logout</a></li>
+								</ul>
+							</li>
+							<%
+								} else {
+							%>
+							
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								 aria-expanded="false">Login / Register</a>
+								<ul class="dropdown-menu" style="border:2px solid white;">
+									<li class="nav-item"><a class="nav-link" href="login">Login</a></li>
+									<li class="nav-item"><a class="nav-link" href="registration">Register</a></li>
+								</ul>
+							</li>
+							
+							<%
+								}
+							%>
+							
+							
+							
+							
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+<script>
+</script>
+<!-- End Header Area -->
+

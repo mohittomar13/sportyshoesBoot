@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+<%@ include file="../includefiles/headandtitle.jspf"%>
+</head>
+
+<body>
+	<%@ include file="../includefiles/adminHeader.jspf"%>
+
+
+	<div class="container section_gap">
+		<div class="row fullscreen align-items-center justify-content-start section_gap">
+			<div class="col-lg-12">
+			
+			
+			
+			admin view sales
+			
+			
+			
+				
+			</div>
+		</div>
+	</div>
+
+	<%@ include file="../includefiles/scripttags.jspf"%>
+</body>
+
+</html>
