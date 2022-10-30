@@ -42,11 +42,14 @@ public class CustomerController {
 	 * @ModelAttribute will not work for JSON object but will work for form data as
 	 * it gets request.getParameter() and then maps those to the object properties,
 	 * but the name in the <form> must match the properties name of the Pojo.
+	 * 
+	 * 
+	 * Also see https://www.baeldung.com/spring-request-response-body
 	 */
 	public ModelAndView registerCustomer(@ModelAttribute Customer customer) {
 //	public ModelAndView registerCustomer(@RequestBody Customer customer) {
 		ModelAndView mv = new ModelAndView("registration.jsp");
-		Customer customerObj = null;
+		Customer customerObj = null; 
 		try {
 			customerObj = custDao.saveCustomer(customer);
 		} catch (Exception e) {

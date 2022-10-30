@@ -23,17 +23,18 @@
 						<ul class="nav navbar-nav menu_nav ml-auto">
 							<li class="nav-item" id="men"><a class="nav-link" href="men">Men</a></li>
 							<li class="nav-item" id="women"><a class="nav-link" href="women">Women</a></li>
-							<li class="nav-item submenu dropdown">
-								<a href="Category?ctype=women" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Women.old</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item" id="shop"><a class="nav-link" href="shop">Shop Category</a></li>
-									<li class="nav-item" id="productDetails"><a class="nav-link" href="productDetails">Product Details</a></li>
-									<li class="nav-item" id="productCheckout"><a class="nav-link" href="productCheckout">Product Checkout</a></li>
-									<li class="nav-item" id="confirmation"><a class="nav-link" href="confirmation">Confirmation</a></li>
-								</ul>
-							</li>
+<!-- 							<li class="nav-item submenu dropdown"> -->
+<!-- 								<a href="Category?ctype=women" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" -->
+<!-- 								 aria-expanded="false">Women.old</a> -->
+<!-- 								<ul class="dropdown-menu"> -->
+<!-- 									<li class="nav-item" id="shop"><a class="nav-link" href="shop">Shop Category</a></li> -->
+<!-- 									<li class="nav-item" id="productDetails"><a class="nav-link" href="productDetails">Product Details</a></li> -->
+<!-- 									<li class="nav-item" id="productCheckout"><a class="nav-link" href="productCheckout">Product Checkout</a></li> -->
+<!-- 									<li class="nav-item" id="confirmation"><a class="nav-link" href="confirmation">Confirmation</a></li> -->
+<!-- 								</ul> -->
+<!-- 							</li> -->
 							<li class="nav-item" id="kids"><a class="nav-link" href="kids">Kids</a></li>
+							<li class="nav-item" id="shop"><a class="nav-link" href="shop">Shop-All</a></li>
 							<li class="nav-item" id="contact"><a class="nav-link" href="contact">Contact</a></li>
 							
 							

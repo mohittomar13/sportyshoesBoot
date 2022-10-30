@@ -58,6 +58,7 @@ class NavigationalRedirects {
 		mv.addObject("pageType", "login");
 		return mv;
 	}
+	
 
 	@RequestMapping("/registration")
 	public ModelAndView redirectRegiter(HttpServletRequest request, HttpServletResponse response) {
